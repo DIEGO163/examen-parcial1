@@ -1,0 +1,32 @@
+1. método agregar un estudiante
+http://localhost:7011/estudiantes/
+{
+  "nombre": "Matematicas",
+  "edad": 2,
+  "fechaNacimiento": "2000-07-15",
+  "activo": true,
+  "cursoDiego": {
+    "id": 2
+  }
+}
+
+2. método para visualizar todos los estudiantes
+   http://localhost:7011/estudiantes/
+
+[
+  {
+    "id": 1,
+    "nombre": "Matematicas",
+    "edad": 2,
+    "fechaNacimiento": "2000-07-14",
+    "activo": true,
+    "cursoDiego": {
+      "id": 2,
+      "nombre": "Matematicas",
+      "duracion": 2
+    }
+  }
+]
+
+3. método para eliminar un empleado por nombre cuando no esta relacionado a nada
+   http://localhost:7011/cursos/"nombre"/
